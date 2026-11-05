@@ -1,0 +1,61 @@
+:root {
+  --asbran-ink: #343a40;
+  --asbran-muted: #747b80;
+  --asbran-paper: #f4f5f3;
+  --asbran-accent: #8b9a78;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: var(--asbran-ink);
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+}
+.asbran-section {
+  padding: 72px 0;
+}
+.asbran-panel {
+  background: var(--asbran-paper);
+  padding: clamp(24px, 5vw, 58px);
+}
+.asbran-eyebrow {
+  margin: 0 0 16px;
+  color: var(--asbran-accent);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.asbran-heading {
+  max-width: 570px;
+  margin: 0 0 22px;
+  color: #303638;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 400;
+  line-height: 1.12;
+}
+.asbran-description {
+  max-width: 520px;
+  margin: 0;
+  color: var(--asbran-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+.asbran-art-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+}
+.asbran-art {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  object-fit: contain;
+}
+@media (max-width: 767.98px) {
+  .asbran-section { padding: 32px 0; }
+  .asbran-art-wrap { min-height: 0; padding-top: 24px; }
+}
