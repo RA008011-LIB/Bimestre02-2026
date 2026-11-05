@@ -1,0 +1,24 @@
+:root { --azul: #263b58; --cinza: #f3f5f4; --texto: #343a40; }
+* { box-sizing: border-box; }
+body { color: var(--texto); font-family: Arial, Helvetica, sans-serif; }
+.secao-sowl { padding: 48px 0 64px; }
+.titulo-sowl { font-size: clamp(1.35rem, 2.5vw, 1.8rem); font-weight: 700; text-align: center; margin-bottom: 10px; }
+.texto-sowl { max-width: 760px; margin: 0 auto 28px; text-align: center; font-size: .92rem; line-height: 1.7; color: #666; }
+.social-list { display: flex; flex-direction: column; gap: 14px; align-items: center; }
+.social-link { width: 82px; height: 82px; border: 2px solid #d7d7d7; border-radius: 50%; display: grid; place-items: center; text-decoration: none; color: #4267B2; font-size: 2.2rem; transition: .2s; }
+.social-link:hover { transform: scale(1.05); box-shadow: 0 4px 16px #0002; }
+.social-link.instagram { color: #d9468f; }
+.foto-sowl { width: 100%; max-width: 540px; height: 270px; object-fit: cover; display: block; margin: auto; }
+.secao-asbran { padding: 64px 0; background: #fff; }
+.asbran-wrap { background: #f4f6f5; padding: 28px; }
+.asbran-kicker { color: #777; text-transform: uppercase; font-size: .68rem; letter-spacing: .12em; margin-bottom: 10px; }
+.asbran-title { font-family: Georgia, serif; font-size: clamp(1.65rem, 3vw, 2.45rem); line-height: 1.15; color: #343434; margin-bottom: 18px; }
+.asbran-copy { color: #777; line-height: 1.6; font-size: .9rem; }
+.certificado { width: 100%; max-width: 420px; height: 250px; object-fit: contain; display: block; margin: auto; }
+@media (max-width: 767px) {
+  .secao-sowl, .secao-asbran { padding: 34px 0; }
+  .foto-sowl { height: 220px; margin-top: 20px; }
+  .social-list { flex-direction: row; justify-content: center; }
+  .asbran-wrap { padding: 20px; }
+  .certificado { margin-top: 22px; }
+}
