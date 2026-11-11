@@ -1,0 +1,43 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #263746;
+}
+
+.titulo-tabela {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #263746;
+}
+
+table {
+    background-color: white;
+}
+
+thead th {
+    color: #222;
+    min-width: 145px;
+}
+
+tbody td:first-child {
+    background-color: #eef8fb;
+    text-align: left;
+}
+
+tbody td:not(:first-child) {
+    background-color: #e5f7fc;
+}
+
+.observacao {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .titulo-tabela {
+        font-size: 18px;
+    }
+}
